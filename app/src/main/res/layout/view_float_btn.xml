@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.github.gossipdemo.radius.RadiusLinearLayout
+        android:id="@+id/layout_close"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/layout_publish"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:rv_backgroundColor="#AF000000"
+        app:rv_radiusHalfHeightEnable="true">
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/ic_comp_close"/>
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭"
+            android:textColor="#FFF"
+            android:textSize="8sp"/>
+
+
+    </com.github.gossipdemo.radius.RadiusLinearLayout>
+
+
+    <com.github.gossipdemo.radius.RadiusLinearLayout
+        android:layout_width="38dp"
+        android:id="@+id/layout_publish"
+        android:layout_height="38dp"
+        android:layout_above="@+id/layout_gossip"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:rv_backgroundColor="#AF000000"
+        app:rv_radiusHalfHeightEnable="true">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/ic_comp_publish"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发表"
+            android:textColor="#FFF"
+            android:textSize="8sp"/>
+
+
+    </com.github.gossipdemo.radius.RadiusLinearLayout>
+
+    <com.github.gossipdemo.radius.RadiusLinearLayout
+        android:id="@+id/layout_gossip"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:rv_backgroundColor="#AF000000"
+        app:rv_radiusHalfHeightEnable="true">
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FFF"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="吐槽"
+            android:textColor="#FFF"
+            android:textSize="12sp"/>
+
+    </com.github.gossipdemo.radius.RadiusLinearLayout>
+
+</RelativeLayout>

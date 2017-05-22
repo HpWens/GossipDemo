@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.github.gossipdemo.radius.RadiusTextView
+        android:id="@+id/rvt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:textColor="#1a1a1a"
+        android:textSize="8sp"
+        app:rv_backgroundColor="#CFEEEBC0"
+        app:rv_radius="2dp"
+        tools:text="hello word"/>
+
+</LinearLayout>
